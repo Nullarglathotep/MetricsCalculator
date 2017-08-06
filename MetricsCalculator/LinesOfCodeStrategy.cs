@@ -70,7 +70,7 @@ namespace MetricsCalculator
         }
         public void FinalizeSelf(MetricsAccumulationNode node)
         {
-            int totalLinesOfCode = 0; ;
+            int totalLinesOfCode = 0;
 
             node.TryGetDataItem<int>(LinesOfCodeData, out totalLinesOfCode);
             foreach (MetricsAccumulationNode child in node.children)

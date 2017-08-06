@@ -26,6 +26,7 @@ namespace MetricsCalculator
         {
             nodesToAccumulate = new SortedSet<SyntaxKind>();
             nodesToAccumulate.Add(SyntaxKind.CompilationUnit);
+            nodesToAccumulate.Add(SyntaxKind.ConstructorDeclaration);
             nodesToAccumulate.Add(SyntaxKind.ClassDeclaration);
             nodesToAccumulate.Add(SyntaxKind.MethodDeclaration);
             nodesToAccumulate.Add(SyntaxKind.InterfaceDeclaration);
